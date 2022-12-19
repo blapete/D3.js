@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Path</title>
+    </head>
+    <body>
+        <!-- the path element is meant for creating complex shapes, and uses commands & coordinates to determine how the shapes are drawn -->
+        <!-- path is regarded as the most powerful shape because it can be conformed to draw any shape i.e. circles, rectanges, hexagons, or any shape -->
+        <!-- paths can create shapes with straight or curved edges, and can have unlimited number of sides -->
+        <!-- paths can be used to draw any of the shapes from shapes.html -->
+        <svg width="500" height="500">
+            <!-- start with some basic attributes -->
+            <path fill="none" stroke="#000" stroke-width="10"></path>
+        </svg>
+        <hr />
+        <svg width="500" height="500">
+            <!-- add the d attribute; d is short for data -->
+            <!-- the value for the d attribute must be a list of commands and coordinates, there are about 10 commands in total -->
+
+            <!-- command #1: the M command. the M command is short for Move -->
+            <!-- the M command instructs svg to move the "pen" to a specific coordinate -->
+            <!-- by default, the virtual "pen" always starts at the (0,0) coordinate (top left corner of the svg element) -->
+            <!-- to draw a shape somewhere else, use the M command to move the pen to a different starting point. this command does not draw anything, it just moves the "pen" -->
+            <!-- after M, provide the coordinates -->
+            <!-- the format for a coordinate is the x coordinate, y coordinate (d="M100,100")-->
+
+            <!-- command #2: the L command; the L command is short for line -->
+            <!-- this command tells svg to draw a line to a coordinate L300,150-->
+            <!-- separate each command/coordinates with spaces -->
+            <!-- can add as many comands as needed -->
+            <path d="M100,100 L300,150" fill="none" stroke="#000" stroke-width="10"></path>
+        </svg>
+    </body>
+</html>
