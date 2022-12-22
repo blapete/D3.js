@@ -1,0 +1,23 @@
+{
+    "name": "d3-js",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "serve": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/blapete/d3.js.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/blapete/d3.js/issues"
+    },
+    "homepage": "https://github.com/blapete/d3.js#readme",
+    "dependencies": {
+        "express": "^4.18.2"
+    }
+}
